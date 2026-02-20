@@ -1,0 +1,10 @@
+.venv/
+wandb/
+data/
+outputs/
+outputs_*
+resynth_outputs_*
+ruslan_resynth/
+checkpoints/
+report_figs/
+report_figs_training/
