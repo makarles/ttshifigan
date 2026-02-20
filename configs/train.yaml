@@ -1,0 +1,43 @@
+defaults:
+  - wandb: default
+  - _self_
+
+seed: 42
+device: cuda
+
+mel:
+  sample_rate: 22050
+  n_fft: 1024
+  win_length: 1024
+  hop_length: 256
+  n_mels: 80
+  f_min: 0
+  f_max: 11025
+  center: true
+  power: 1.0
+  mel_norm: null
+
+data:
+  root: data/ruslan
+  audio_dir: audio
+  train_split: 0.98
+  max_files: null
+
+training:
+  out_dir: outputs
+
+  segment_size: 8192
+  batch_size: 12
+  num_workers: 4
+  pin_memory: true
+
+  max_steps: 120000
+  log_every: 200
+  log_audio_every: 5000
+  ckpt_every: 10000
+
+optim:
+  lr: 0.0002
+  betas: [0.8, 0.99]
+  weight_decay: 0.01
+

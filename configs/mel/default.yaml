@@ -1,0 +1,11 @@
+
+sample_rate: 22050
+n_fft: 1024
+win_length: 1024
+hop_length: 256
+n_mels: 80
+f_min: 0
+f_max: 11025
+center: true
+power: 1.0
+mel_norm: null

@@ -1,0 +1,9 @@
+project: dl-audio-hifigan
+entity: null
+name: hifigan-v2-22k
+mode: offline
+tags:
+  - hifigan
+  - 22k
+  - baseline
+notes: "HiFi-GAN V2 baseline training on RUSLAN 22050 Hz"
